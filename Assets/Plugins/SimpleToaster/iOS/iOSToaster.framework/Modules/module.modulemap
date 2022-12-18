@@ -1,0 +1,11 @@
+framework module iOSToaster {
+  umbrella header "iOSToaster.h"
+
+  export *
+  module * { export * }
+}
+
+module iOSToaster.Swift {
+  header "iOSToaster-Swift.h"
+  requires objc
+}
