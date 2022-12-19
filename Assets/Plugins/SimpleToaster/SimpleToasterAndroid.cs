@@ -1,3 +1,4 @@
+#if UNITY_ANDROID
 using UnityEngine;
 
 namespace Plugins.SimpleToaster
@@ -31,3 +32,5 @@ namespace Plugins.SimpleToaster
         }
     }
 }
+
+#endif

@@ -1,3 +1,4 @@
+#if UNITY_IOS
 using System.Runtime.InteropServices;
 using UnityEngine;
 
@@ -18,3 +19,4 @@ namespace Plugins.SimpleToaster
         }
     }
 }
+#endif
