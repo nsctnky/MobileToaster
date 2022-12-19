@@ -8,7 +8,7 @@ namespace Plugins.SimpleToaster
         private const string UnityPlayer = "com.unity3d.player.UnityPlayer";
         private const string CurrentActivity = "currentActivity";
         private const string Toaster = "com.nsctnky.androidtoaster.ToasterController";
-        private const string ShowToast = "ShowToast";
+        private const string SendToast = "SendToast";
         
         private readonly AndroidJavaObject _unityActivity;
         private readonly AndroidJavaObject _toaster;
@@ -28,9 +28,8 @@ namespace Plugins.SimpleToaster
             parameters[1] = message;
             parameters[2] = isShortDuration;
             
-            _toaster.Call(ShowToast, parameters);
+            _toaster.Call(SendToast, parameters);
         }
     }
 }
-
 #endif
