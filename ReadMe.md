@@ -7,7 +7,7 @@ iOS Framework: https://github.com/nsctnky/iOSToaster
 
 #### Usage
 ```csharp
-    bool isShortMessage = true
-    Toast toast = new Toast("Example Toast Message", isShortMessage);
+    bool isShortDuration = true
+    Toast toast = new Toast("Example Toast Message", isShortDuration);
     toast.Show();
 ```
